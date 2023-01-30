@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+.App{
+    background: linear-gradient(rgb(34, 37, 48), rgb(29, 34, 44));
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 15rem auto 20rem;
+    color: rgb(255, 255, 255);
+    font-family: 'Libre Baskerville', serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sidebar{
+  height: 92vh;
+    width: 100%;
+    background: linear-gradient(rgb(39, 39, 45), rgb(18, 19, 24));
+    overflow: hidden;
+    color: rgb(122, 114, 103);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  
+.sidebar a {
+    display: block;
+    color: rgb(255, 255, 255);
+    padding: 16px;
+    text-decoration: none;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+   
+  .sidebar a.active {
+    background-color: #fffffff3;
+    color: rgb(0, 0, 0);
   }
-  to {
-    transform: rotate(360deg);
+  
+  .sidebar a:hover:not(.active) {
+    background-color: rgba(71, 87, 115, 0.977);
+    color: rgba(255, 255, 255, 0.872);
   }
-}
+
+  .logo{
+    font-size: 1cm;
+    width: 100%;
+    border-radius: 0mm;
+  }
+  .btn1{
+    border-radius: 20mm;
+    border-color: rgb(34, 37, 48);
+    background: linear-gradient(rgb(121, 123, 133), rgb(193, 198, 207));
+    padding: .5rem;
+  }
+
+  .btn1:hover{
+    border-color: rgba(71, 87, 115, 0.977);
+    background: rgba(71, 87, 115, 0.977);
+  }
+
+  .text-clr{
+    color: azure;
+  }
+
+  .ipo-align{
+    margin: 2rem;
+  }
+  .ito-item{
+    background: rgba(71, 87, 115, 0.977);
+  }
